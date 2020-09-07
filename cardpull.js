@@ -1,6 +1,16 @@
 const cards = [
-  { almonds: "Almonds", image: "images/almonds.jpg" },
-  { apples: "Apples", image: "images/apples.jpg" },
+  {
+    almonds: "Almonds",
+    image: "images/almonds.jpg",
+    explanation:
+      "Almonds are all about power. Remind yourself that you have the power to make your dreams come true!",
+  },
+  {
+    apples: "Apples",
+    image: "images/apples.jpg",
+    explanation:
+      "You have an abundance of something today. Use all that extra wisely.",
+  },
   { bananas: "Bananas", image: "images/bananas.jpg" },
   { beets: "Beets", image: "images/beets.jpg" },
   { blackSesame: "Black Sesame", image: "images/blacksesame.jpg" },
@@ -19,7 +29,12 @@ const cards = [
   { grapes: "Grapes", image: "images/grapes.jpg" },
   { kiwi: "Kiwi", image: "images/kiwi.jpg" },
   { limes: "Limes", image: "images/limes.jpg" },
-  { mint: "Mint", image: "images/mint.jpg" },
+  {
+    mint: "Mint",
+    image: "images/mint.jpg",
+    explanation:
+      "How are you feeling today? Don't forget to take care of your physical and spiritual well-being!",
+  },
   { mushrooms: "Mushrooms", image: "images/mushrooms.jpg" },
   { olives: "Olives", image: "images/olives.jpg" },
   { onions: "Onions", image: "images/onions.jpg" },
@@ -29,11 +44,21 @@ const cards = [
   { pears: "Pears", image: "images/pears.jpg" },
   { pineapple: "Pineapple", image: "images/pineapple.jpg" },
   { plum: "Plum", image: "images/plum.jpg" },
-  { pomegranate: "Pomegranate", image: "images/pomegranate.jpg" },
+  {
+    pomegranate: "Pomegranate",
+    image: "images/pomegranate.jpg",
+    explanation:
+      "A simple reminder you're always connected to your higher power. Embrace your connection to the spirit today.",
+  },
   { redbellpepper: "Red Bell Pepper", image: "images/redbellpepper.jpg" },
   { rosemary: "Rosemary", image: "images/rosemary.jpg" },
   { spinach: "Spinach", image: "images/spinach.jpg" },
-  { strawberries: "Strawberries", image: "images/strawberries.jpg" },
+  {
+    strawberries: "Strawberries",
+    image: "images/strawberries.jpg",
+    explanation:
+      "Love is in the air today! Don't forget to love yourself as much as you love others.",
+  },
   { tomatoes: "Tomatoes", image: "images/tomatoes.jpg" },
   { water: "Water", image: "images/water.jpg" },
   { watermelon: "Watermelon", image: "images/watermelon.jpg" },
@@ -41,16 +66,11 @@ const cards = [
 
 function newCard() {
   const randomNumber = Math.floor(Math.random() * cards.length);
-  const currentCard = document.getElementById("cardName").innerHTML;
 
-  if (currentCard == Object.values(cards[randomNumber])[0]) {
-    newCard();
-  } else {
-    document.getElementById("cardImage").src = Object.values(
-      cards[randomNumber]
-    )[1];
-    document.getElementById("cardName").innerHTML = Object.values(
-      cards[randomNumber]
-    )[0];
-  }
+  document.getElementById("cardImage").src = Object.values(
+    cards[randomNumber]
+  )[1];
+  document.getElementById("cardExplainJs").innerHTML = Object.values(
+    cards[randomNumber]
+  )[2];
 }

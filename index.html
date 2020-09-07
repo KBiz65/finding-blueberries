@@ -4,64 +4,287 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finding Blueberries</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body onload="newCard(); newTestimonial();">
-    <header class="logo">
-      <img src="images/cover.png" alt="Finding Blueberries logo" />
+    <header class="header_container">
+      <div class="logo">
+        <img
+          src="images/fbb_logo_with_gradient.png"
+          alt="Finding Blueberries logo"
+        />
+      </div>
+
+      <div class="fbb_title_container">
+        <div class="fbb_title">Finding Blueberries</div>
+      </div>
+
+      <div class="fbb_tagline">Certified Food Healing Deck Readings</div>
+
+      <div class="card_draw_container">
+        <div class="card_draw_text">
+          <div class="card_draw_head">Random Card Draw</div>
+          <p class="card_explain">What is could mean:</p>
+
+          <p id="cardExplainJs">
+            <!-- The explanation of the card will display here -->
+          </p>
+        </div>
+
+        <div class="card_draw_image">
+          <img src="" alt="random card pic" id="cardImage" />
+          <!-- The card image will display below -->
+        </div>
+        <div class="caption">photo credit: Food Healing Oracle Deck</div>
+        <script src="cardpull.js"></script>
+      </div>
     </header>
 
     <div class="main-container">
-      <div class="card-pull">
-        <h2>Your card of the day!</h2>
-        <!-- The card image will display below -->
-        <img src="" alt="random card pic" id="cardImage">
+      <div class="about_container">
+        <div class="about_text">
+          <p>
+            The Food Healing Oracle Decks were created by Joanna Salerno and
+            Lainie Sevante Wulkan to help those who need guidance in their lives
+            and help identifying the energies of certain foods and how they can
+            be used to heal mind, body, and spirit.
+          </p>
+
+          <p>
+            Kevin is the
+            <strong
+              >first certified Food Healing Oracle Deck reader in the
+              world</strong
+            >
+            and is incredibly in tune with the energies imbued in the cards.
+            Originally a major skeptic in intuitive healing, Kevin was able to
+            connect with the spirit to help himself and others.
+          </p>
+
+          <p>
+            Blueberries, in the deck, represent clarity. When starting as a
+            certified reader, one of the most frequent pieces of feedback Kevin
+            received was that his clients found clarity in the reading and that
+            it helped them get some insight into whatever issue they were
+            focusing on. That's when Kevin decided to start Finding Blueberries.
+          </p>
         </div>
-        <div class="caption">photo credit: Food Healing Oracle Deck</div>
-        <div id="cardName">
-          <!-- The card name will display here -->
+
+        <div class="about_img_container">
+          <img src="images/kevin.jpg" alt="headshot of Kevin" />
         </div>
-        <button onclick="newCard()">New Card</button>
-        <script src="cardpull.js"></script>
+
+        <button class="schedule_button">Schedule a reading now!</button>
       </div>
 
-      <div class="testimonial-container">
-        <h2 class="testimonial-header">Testimonials</h2>
-        <div id="quote-name-container">
-          <div id="newQuote">
-            <!-- This is where the quote for the testimonial will go -->
-          </div>
+      <div class="testimonial_container">
+        <h3 class="testimonial_header">Testimonials:</h3>
+        <div class="quote_name_container">
           <div id="newName">
             <!-- This is where the name for the quote will go -->
+          </div>
+          <div id="newQuote">
+            <!-- This is where the quote for the testimonial will go -->
           </div>
           <script src="changetestimonial.js"></script>
         </div>
       </div>
-      <div class="text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-        accusamus modi quas cupiditate sapiente magni dolores dolore, quam alias
-        impedit ut blanditiis assumenda dolorem sit eaque neque est vero
-        molestias!
+
+      <div class="shop_container">
+        <div class="shop_items_container">
+          <div class="shop_header">Shop:</div>
+          <div class="shop_text">
+            Our four favorite items from The Food Healing Oracle Deck™. Clicking
+            on one of the items will take you to directly to that item at the
+            FHOD store. Feel free to look around and add more to your cart.
+            Transaction will be completed directly on the FHOD site.
+          </div>
+          <div class="shop_items_row">
+            <div class="shop_item">
+              <a
+                href="https://www.foodhealingdeck.com/shoppage/the-food-healing-oracle-deck-with-book?peachs_apc=kevin-bisner"
+                target="_blank"
+              >
+                <div class="item_pic">
+                  <img
+                    src="images/Deck_full_size.png"
+                    alt="picture of full size FHOD deck"
+                  />
+                </div>
+                <div class="item_name_price">
+                  <div class="item_name">The Food Healing Oracle Deck™</div>
+                  <div class="item_price">$28.95</div>
+                </div>
+                <div class="item_description">
+                  Full sized deck of 60 cards. Includes a 150+ page book with
+                  card meanings and spreads.
+                </div>
+              </a>
+            </div>
+            <div class="shop_item">
+              <a
+                href="https://www.foodhealingdeck.com/shoppage/deckwithbag?peachs_apc=kevin-bisner"
+                target="_blank"
+              >
+                <div class="item_pic">
+                  <img
+                    src="images/Deck_kids_mini.png"
+                    alt="picture of mini size FHOD deck"
+                  />
+                </div>
+                <div class="item_name_price">
+                  <div class="item_name">
+                    The Food Healing Oracle Deck™ MINI
+                  </div>
+                  <div class="item_price">$18.95</div>
+                </div>
+                <div class="item_description">
+                  Full deck of 60 cards in a smaller size. Perfect for kids and
+                  for traveling. Includes a small carrying bag.
+                </div>
+              </a>
+            </div>
+            <div class="shop_item">
+              <a
+                href="https://www.foodhealingdeck.com/shoppage/travelbag?peachs_apc=kevin-bisner"
+                target="_blank"
+              >
+                <div class="item_pic">
+                  <img src="images/Chakra_tote.png" alt="Chakra Tote" />
+                </div>
+                <div class="item_name_price">
+                  <div class="item_name">Chakra Tote</div>
+                  <div class="item_price">$22.00</div>
+                </div>
+                <div class="item_description">
+                  Keep your cards safe and protected with the Chakra tote.
+                  Perfect for storing your deck when not in use. Available in 7
+                  colors to match one of the 7 Chakras.
+                </div>
+              </a>
+            </div>
+            <div class="shop_item">
+              <a
+                href="https://www.foodhealingdeck.com/shoppage/malaenergyrocks?peachs_apc=kevin-bisner"
+                target="_blank"
+              >
+                <div class="item_pic">
+                  <img src="images/Blueberry_stone.jpg" alt="" />
+                </div>
+                <div class="item_name_price">
+                  <div class="item_name">Blueberry Energy Rock</div>
+                  <div class="item_price">$30.00</div>
+                </div>
+                <div class="item_description">
+                  Hand-painted rock in our favorite color, BLUE! This rock
+                  represents clarity. Use it to place on your deck after a
+                  reading or simply on your nightstand while you sleep.
+                  Available in other colors as well as in a set with optional
+                  Mala Necklace for an additional price.
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsa
-        quo id quis ullam unde dignissimos tempore, non a, ratione animi rerum
-        explicabo. Placeat qui culpa nostrum eos, alias similique.
+
+      <div class="affiliates_container">
+        <div class="affiliates_items_container">
+          <div class="affiliates_header">Affiliates:</div>
+          <div class="affiliates_text">
+            Check out these other fantastic products and services that Kevin
+            personally recommends.
+          </div>
+          <div class="affiliates_items_row">
+            <div class="affiliates_item">
+              <a href="https://www.pastlifearcheologist.com" target="_blank">
+                <div class="affiliates_pic">
+                  <img
+                    src="images/Past_life_archeologist.png"
+                    alt="Cheryle Freedman Past Life Archeologist logo"
+                  />
+                </div>
+                <div class="affiliates_name">
+                  Cheryle Freedman: Past Life Archeologist
+                </div>
+                <div class="affiliates_description">
+                  Past life regression and energy work.
+                </div>
+              </a>
+            </div>
+
+            <div class="affiliates_item">
+              <a href="https://www.peacefulhealingreiki.com" target="_blank">
+                <div class="affiliates_pic">
+                  <img
+                    src="images/Peaceful_healing_reiki.jpg"
+                    alt="picture of full size FHOD deck"
+                  />
+                </div>
+                <div class="affiliates_name">Peaceful Healing Reiki</div>
+                <div class="affiliates_description">
+                  Reiki healing sessions and classes to become a healer
+                  yourself.
+                </div>
+              </a>
+            </div>
+
+            <div class="affiliates_item">
+              <a
+                href="https://certified-reader-affiliates.peachs.co/a/kevin-bisner"
+                target="_blank"
+              >
+                <div class="affiliates_pic">
+                  <img
+                    src="images/FHOD.png"
+                    alt="picture for the Food Healing Oracle Deck link"
+                  />
+                </div>
+                <div class="affiliates_name">The Food Healing Oracle Deck™</div>
+                <div class="affiliates_description">
+                  This is the one stop shop for the card deck that Kevin uses
+                  and other various products.
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsa
-        quo id quis ullam unde dignissimos tempore, non a, ratione animi rerum
-        explicabo. Placeat qui culpa nostrum eos, alias similique.
-      </div>
-      <div class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsa
-        quo id quis ullam unde dignissimos tempore, non a, ratione animi rerum
-        explicabo. Placeat qui culpa nostrum eos, alias similique.
-      </div>
-      <div class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsa
-        quo id quis ullam unde dignissimos tempore, non a, ratione animi rerum
-        explicabo. Placeat qui culpa nostrum eos, alias similique.
+
+      <div class="contact_container">
+        <div class="contact_header">Contact</div>
+        <form
+          action="contact.php"
+          method="POST"
+          target="_blank"
+          id="contact_form"
+        >
+          <p class="form_text">Full name</p>
+          <input type="text" name="_fullname" class="form_control" required />
+          <br />
+
+          <p class="form_text">Email</p>
+          <input type="text" name="_replyto" class="form_control" required />
+          <br />
+
+          <p class="form_text">Subject</p>
+          <input type="text" name="_subject" class="form_control" required />
+          <br />
+
+          <p class="form_text">Message</p>
+          <textarea
+            name="message"
+            class="form_control"
+            row="4"
+            required
+          ></textarea>
+          <br />
+        </form>
+        <button type="submit" class="form_button">Send</button>
       </div>
     </div>
   </body>
