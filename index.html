@@ -19,16 +19,14 @@
         />
       </div>
 
-      <div class="fbb_title_container">
-        <div class="fbb_title">Finding Blueberries</div>
-      </div>
+      <div class="fbb_title">Finding Blueberries</div>
 
-      <div class="fbb_tagline">Certified Food Healing Deck Readings</div>
+      <div class="fbb_tagline">Certified Food Healing Deck™ Readings</div>
 
       <div class="card_draw_container">
         <div class="card_draw_text">
           <div class="card_draw_head">Random Card Draw</div>
-          <p class="card_explain">What is could mean:</p>
+          <p class="card_explain">What it could mean:</p>
 
           <p id="cardExplainJs">
             <!-- The explanation of the card will display here -->
@@ -39,12 +37,18 @@
           <img src="" alt="random card pic" id="cardImage" />
           <!-- The card image will display below -->
         </div>
-        <div class="caption">photo credit: Food Healing Oracle Deck</div>
+        <div class="caption">photo credit: Food Healing Oracle Deck™</div>
         <script src="cardpull.js"></script>
       </div>
+      <div class="fine_print">
+        * The random card draw is for entertainment purposes only. For a
+        personalized reading or for more information on what a specific card
+        could mean for you, schedule an appointment below.
+      </div>
+      <div class="line1"></div>
     </header>
 
-    <div class="main-container">
+    <div class="main_container">
       <div class="about_container">
         <div class="about_text">
           <p>
@@ -66,19 +70,23 @@
           </p>
 
           <p>
-            Blueberries, in the deck, represent clarity. When starting as a
-            certified reader, one of the most frequent pieces of feedback Kevin
-            received was that his clients found clarity in the reading and that
-            it helped them get some insight into whatever issue they were
-            focusing on. That's when Kevin decided to start Finding Blueberries.
+            The Healing Wisdom Word for Blueberries is CLARITY! When Kevin first
+            started as a certified reader, one of the most frequent pieces of
+            feedback he received was that his clients found clarity in their
+            reading and that helped them change their perspective about the
+            purpose of the reading. Alas, Finding Blueberries was born!
           </p>
         </div>
 
         <div class="about_img_container">
           <img src="images/kevin.jpg" alt="headshot of Kevin" />
         </div>
-
-        <button class="schedule_button">Schedule a reading now!</button>
+        <a
+          href="https://my.setmore.com/bookingpage/789a0e3f-55e0-4e7c-9e47-3b62692d8d76"
+          target="_blank"
+        >
+          <div class="schedule_button">Schedule a reading now!</div></a
+        >
       </div>
 
       <div class="testimonial_container">
@@ -173,7 +181,7 @@
                 target="_blank"
               >
                 <div class="item_pic">
-                  <img src="images/Blueberry_stone.jpg" alt="" />
+                  <img src="images/Blueberry_stone.png" alt="" />
                 </div>
                 <div class="item_name_price">
                   <div class="item_name">Blueberry Energy Rock</div>
@@ -221,7 +229,7 @@
               <a href="https://www.peacefulhealingreiki.com" target="_blank">
                 <div class="affiliates_pic">
                   <img
-                    src="images/Peaceful_healing_reiki.jpg"
+                    src="images/Peaceful_healing_reiki.png"
                     alt="picture of full size FHOD deck"
                   />
                 </div>
@@ -257,22 +265,17 @@
 
       <div class="contact_container">
         <div class="contact_header">Contact</div>
-        <form
-          action="contact.php"
-          method="POST"
-          target="_blank"
-          id="contact_form"
-        >
+        <form action="contact.php" method="POST" class="contact_form">
           <p class="form_text">Full name</p>
-          <input type="text" name="_fullname" class="form_control" required />
+          <input type="text" name="name" class="form_control" required />
           <br />
 
           <p class="form_text">Email</p>
-          <input type="text" name="_replyto" class="form_control" required />
+          <input type="text" name="email" class="form_control" required />
           <br />
 
           <p class="form_text">Subject</p>
-          <input type="text" name="_subject" class="form_control" required />
+          <input type="text" name="subject" class="form_control" required />
           <br />
 
           <p class="form_text">Message</p>
@@ -283,8 +286,10 @@
             required
           ></textarea>
           <br />
+          <div class="form_button">
+            <button type="submit">Send</button>
+          </div>
         </form>
-        <button type="submit" class="form_button">Send</button>
       </div>
     </div>
   </body>

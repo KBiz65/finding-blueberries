@@ -14,6 +14,16 @@ const testimonials = [
     quote:
       '"Kevin’s reading was spot-on! We went into it just for fun, without any expectations, and found ourselves nodding in agreement with everything he said. He was thorough in his explanations and made sure we understood exactly what the cards meant. We highly recommend a reading by Kevin."',
   },
+  {
+    name: "Lainie & Joanna (creators of the FHOD!) said:",
+    quote:
+      "Kevin is our very FIRST certified reader in the universe. There's a reason for that!",
+  },
+  {
+    name: "Chip said:",
+    quote:
+      "I am a person of logic, reason, and grounded in science. I had a reading and it was kind of scary with the level of detail related to my life currently. These were not overgeneralized answers. In any situation, I guess the best answer would be through scientific method and my next visit.",
+  },
 ];
 
 let counter = 0;
