@@ -8,9 +8,18 @@
       href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
   </head>
-  <body onload="newCard(); newTestimonial();">
+  <body onload="newCard();"></body>
     <header class="header_container">
       <div class="logo">
         <img
@@ -91,14 +100,62 @@
 
       <div class="testimonial_container">
         <h3 class="testimonial_header">Testimonials:</h3>
-        <div class="quote_name_container">
-          <div id="newName">
-            <!-- This is where the name for the quote will go -->
+      </div>
+      <div class="slick_slider">
+        <div class="quote_item">
+          <div class="quote_inner_container" id="slide_0">
+            <p class="quote_name"><bold>Robert</bold> said:</p>
+            <p class="quote_quote">
+              I'm not one to do readings but I actually enjoyed the experience.
+              Learning about the past, present, and future of my career was not
+              only entertaining but insightful.
+              </p>
+            </p>
           </div>
-          <div id="newQuote">
-            <!-- This is where the quote for the testimonial will go -->
+        </div>
+
+        <div class="quote_item">
+          <div class="quote_inner_container" id="slide_1">
+            <p class="quote_name"><bold>Tyler</bold> said:</p>
+            <p class="quote_quote">
+              It helped me gain some closure and realize that I can't just sit
+              here and let life work itself out. I have to take my own
+              initiative.
+            </p>
           </div>
-          <script src="changetestimonial.js"></script>
+        </div>
+
+        <div class="quote_item">
+          <div class="quote_inner_container" id="slide_2">
+            <p class="quote_name"><bold>Jason & Joey</bold> said:</p>
+            <p class="quote_quote">
+              Kevin’s reading was spot-on! We went into it just for fun, without
+              any expectations, and found ourselves nodding in agreement with
+              everything he said.
+            </p>
+          </div>
+        </div>
+
+        <div class="quote_item">
+          <div class="quote_inner_container" id="slide_3">
+            <p class="quote_name">
+              <bold>Lainie & Joanna (creators of the FHOD!)</bold> said:
+            </p>
+            <p class="quote_quote">
+              Kevin is our very FIRST certified reader in the universe. There's
+              a reason for that!
+            </p>
+          </div>
+        </div>
+
+        <div class="quote_item">
+          <div class="quote_inner_container" id="slide_4">
+            <p class="quote_name"><bold>Chip</bold> said:</p>
+            <p class="quote_quote">
+              My reading was almost scary with the level of detail related to my
+              life currently. These were not overgeneralized answers.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -209,7 +266,7 @@
           </div>
           <div class="affiliates_items_row">
             <div class="affiliates_item">
-              <a href="https://www.pastlifearcheologist.com" target="_blank">
+              <a href="https://www.cherylefreedman.com" target="_blank">
                 <div class="affiliates_pic">
                   <img
                     src="images/Past_life_archeologist.png"
@@ -226,7 +283,7 @@
             </div>
 
             <div class="affiliates_item">
-              <a href="https://www.peacefulhealingreiki.com" target="_blank">
+              <a href="https://peacefulhealingreiki.com" target="_blank">
                 <div class="affiliates_pic">
                   <img
                     src="images/Peaceful_healing_reiki.png"
@@ -292,5 +349,9 @@
         </form>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="testimonial_change.js"></script>
   </body>
 </html>
